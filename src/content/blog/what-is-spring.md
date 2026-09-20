@@ -23,7 +23,7 @@ heroImage: "https://spring.io/img/spring.svg"
 draft: false
 featured: false
 
-canonicalURL: "https://devendrachoudharycodes.github.io/blogs/blog/what-is-spring/"
+canonicalURL: "https://devendrachoudharycodes.github.io/programmingBlogs/blog/what-is-spring/"
 ---
 
 When starting out with modern Java development, you inevitably run into **Spring**. It is the standard framework for enterprise Java applications. But before diving straight into `@RestController`, `@Autowired`, or `@SpringBootApplication`, it is essential to understand *why* Spring exists, *what problem* it was designed to solve, and *how* to think about the Spring container.

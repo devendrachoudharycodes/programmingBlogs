@@ -1,4 +1,3 @@
-```astro
 ---
 import { SITE_TITLE } from '../consts';
 import HeaderLink from './HeaderLink.astro';
@@ -6,38 +5,32 @@ import HeaderLink from './HeaderLink.astro';
 
 <header>
 	<nav>
-		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<h2><a href={import.meta.env.BASE_URL}>{SITE_TITLE}</a></h2>
 		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
+			<HeaderLink href={import.meta.env.BASE_URL}>Home</HeaderLink>
+			<HeaderLink href={`${import.meta.env.BASE_URL}blog`}>Blog</HeaderLink>
+			<HeaderLink href={`${import.meta.env.BASE_URL}about`}>About</HeaderLink>
 		</div>
 		<div class="social-links">
 			<a href="https://in.linkedin.com/in/devendra-choudhary-1b6534400" target="_blank">
-
 				<span class="sr-only">Follow Devendra Choudhary on Linkedin</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
-	fill="currentColor"
-	d="M3.58 2.01A1.67 1.67 0 1 1 .24 2.01a1.67 1.67 0 0 1 3.34 0ZM.47 4.94h3.12V15H.47V4.94Zm4.99 0h2.99v1.38h.04c.42-.79 1.44-1.62 2.97-1.62 3.18 0 3.77 2.09 3.77 4.81V15h-3.12V10.1c0-1.17-.02-2.68-1.63-2.68-1.63 0-1.88 1.27-1.88 2.59V15H5.46V4.94Z"
-></path>
-					</svg
-				>
+						fill="currentColor"
+						d="M3.58 2.01A1.67 1.67 0 1 1 .24 2.01a1.67 1.67 0 0 1 3.34 0ZM.47 4.94h3.12V15H.47V4.94Zm4.99 0h2.99v1.38h.04c.42-.79 1.44-1.62 2.97-1.62 3.18 0 3.77 2.09 3.77 4.81V15h-3.12V10.1c0-1.17-.02-2.68-1.63-2.68-1.63 0-1.88 1.27-1.88 2.59V15H5.46V4.94Z"
+					></path>
+				</svg>
 			</a>
 			<a href="https://x.com/ChoudharyCodes" target="_blank">
 				<span class="sr-only">Follow Devendra Choudhary on X</span>
-				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
-                       >
-<path
-	fill="currentColor"
-	d="M12.6 1.125h2.205l-4.818 5.507 5.667 7.118h-4.45L7.72 9.204l-3.987 4.546H1.086l5.153-5.89L.782 1.125h4.565l3.151 4.169 3.662-4.169Zm-.774 11.68h1.222L4.722 2.75H3.411l8.415 10.055Z"
-></path>
-
-</svg
-				>
+				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32">
+					<path
+						fill="currentColor"
+						d="M12.6 1.125h2.205l-4.818 5.507 5.667 7.118h-4.45L7.72 9.204l-3.987 4.546H1.086l5.153-5.89L.782 1.125h4.565l3.151 4.169 3.662-4.169Zm-.774 11.68h1.222L4.722 2.75H3.411l8.415 10.055Z"
+					></path>
+				</svg>
 			</a>
 			<a href="https://github.com/devendrachoudharycodes" target="_blank">
-
 				<span class="sr-only">Go to Devendra Choudhary's Github</span>
 				<svg viewBox="0 0 16 16" aria-hidden="true" width="32" height="32"
 					><path
@@ -92,5 +85,3 @@ import HeaderLink from './HeaderLink.astro';
 		}
 	}
 </style>
-```
-
